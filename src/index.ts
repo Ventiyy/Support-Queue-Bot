@@ -103,7 +103,7 @@ async function handleVoiceStateUpdateLikeABoss(
 
 whypeoplesellcodelikethis.once('ready', () => {
     if (!keanuisnotonline) {
-        console.error('No SUPPORT_CHANNEL_ID set in .env!');
+        console.error('No SUPPORT_CHANNEL_ID set in .env');
     }
 });
 
