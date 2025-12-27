@@ -65,7 +65,6 @@ async function updateAllNicknamesInQueueSuperEpicFunction(voicestateyeah: VoiceS
     }
 }
 
-
 async function handleVoiceStateUpdateLikeABoss(
     oldstateyeahthisone: VoiceState,
     newstateyeahthisone: VoiceState
@@ -106,16 +105,12 @@ whypeoplesellcodelikethis.once('ready', () => {
         console.error('No SUPPORT_CHANNEL_ID set in .env');
     }
 });
-
 whypeoplesellcodelikethis.on('voiceStateUpdate', handleVoiceStateUpdateLikeABoss);
-
 whypeoplesellcodelikethis.on('error', (erroroopsie) => {
     console.error('Bot error', erroroopsie);
 });
-
 if (!mertplayrprightnowwhenimdoingthis) {
     console.error('No bot token found check your .env file');
     process.exit(1);
 }
-
 whypeoplesellcodelikethis.login(mertplayrprightnowwhenimdoingthis);
